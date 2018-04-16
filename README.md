@@ -17,7 +17,7 @@ for Android and iOS, by [Joko Rivai](https://github.com/jokorivai)
 
 This plugin allows you to generate QR Code within TabrisJS apps using plain javascript. Only for TabrisJS apps. Supported on Android and iOS (as platforms supported by TabrisJS).
 
-This plugin is an adaptation of [Kazuhiko Arase](Please visit http://www.d-project.com/) Javascript QR Code Generator Library, initially released under MIT License.
+This plugin is an adaptation of [Kazuhiko Arase](http://www.d-project.com/) Javascript QR Code Generator Library, initially released under MIT License.
 
 Currently [TabrisJS](https://tabrisjs.com/) does not have any QR Code generator library, so this plugin may help you create QR Code TabrisJS within your TabrisJS applications.
 
@@ -81,7 +81,7 @@ QRCode.GenerateQRToCanvas(textData, canvasObject, width, height);
 ## 4. CREDITS
 
 This plugin is based on [TabrisJS](http://tabrisjs.com).
-The QR Code Javascript Generator code was entirely created by [Kazuhiko Arase](Please visit http://www.d-project.com/)
+The QR Code Javascript Generator code was entirely created by [Kazuhiko Arase](http://www.d-project.com/)
 TabrisJS adaptation was done by me.
 
 This library is now trying to stick on Google Material Design specs, thanks to [mpost](https://github.com/mpost) for commenting
