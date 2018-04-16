@@ -44,10 +44,6 @@ As per TabrisJS CLI generated project structure, I chose not to publish this plu
 
 Please use manual installation instead:
 
-```js
-window.tabrisJsPlugins.qrCode.GenerateQRToCanvas(textData, canvasObject, width, height);
-```
-
 ### Manually
 
 Grab a copy of `tabrisjsqrcode.js`, from `extracted-zip\www\` and put it to your project source's `www` folder and reference it:
