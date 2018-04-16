@@ -59,14 +59,14 @@ Please note that this plugin is NOT for HTML/WebView based Cordova apps. This pl
 To create QR Code, call
 ```js
 // reference to the plugin
-var QRCodeGenerator = window.tabrisJsPlugins.GenerateQRToCanvas;
+var QRCodeGenerator = window.tabrisJsPlugins.qrCode.GenerateQRToCanvas;
 // create card:
 QRCodeGenerator(textData, canvasObject, width, height);
 ```
 
 Or
 ```js
-window.tabrisJsPlugins.GenerateQRToCanvas(textData, canvasObject, width, height);
+window.tabrisJsPlugins.qrCode.GenerateQRToCanvas(textData, canvasObject, width, height);
 ```
 
 ### Manually

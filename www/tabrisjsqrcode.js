@@ -1271,7 +1271,7 @@ module.exports = {
 		ctx.scale(scaleFactor, scaleFactor);
 
 
-		var q = new QRCode(-1, QRErrorCorrectLevel.H);
+		var qrCode = new QRCode(-1, QRErrorCorrectLevel.H);
 		qrCode.addData(teks);
 		qrCode.make();
 

@@ -1,9 +1,9 @@
 {
-  "name": "cordova-plugin-tabrisjs-card",
+  "name": "cordova-plugin-tabrisjs-qrgen",
   "version": "1.0.5",
-  "description": "This plugin allows you to create card view using plain javascript. Only for TabrisJS apps.",
+  "description": "This plugin allows you to generate QR Code within TabrisJS apps using plain javascript. Only for TabrisJS apps. Supported on Android and iOS (as platforms supported by TabrisJS).",
   "cordova": {
-    "id": "cordova-plugin-tabrisjs-card",
+    "id": "cordova-plugin-tabrisjs-qrgen",
     "platforms": [
       "ios",
       "android"
@@ -11,15 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jokorivai/cordova-plugin-tabrisjs-card.git"
+    "url": "git+https://github.com/jokorivai/cordova-plugin-tabrisjs-qrgen.git"
   },
   "keywords": [
 	"ecosystem:cordova",
     "cordova-android",
     "cordova-ios",
     "TabrisJS",
-    "Card",
-    "CardView"
+    "QRCode",
+    "Generator"
   ],
   "engines": [
     {
@@ -30,7 +30,7 @@
   "author": "Joko Rivai <buyutjokorivai@gmail.com> (https://github.com/jokorivai)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jokorivai/cordova-plugin-tabrisjs-card/issues"
+    "url": "https://github.com/jokorivai/cordova-plugin-tabrisjs-qrgen/issues"
   },
-  "homepage": "https://github.com/jokorivai/cordova-plugin-tabrisjs-card"
+  "homepage": "https://github.com/jokorivai/cordova-plugin-tabrisjs-qrgen"
 }
