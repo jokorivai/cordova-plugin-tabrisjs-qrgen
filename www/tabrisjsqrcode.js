@@ -14,6 +14,9 @@
 //
 //---------------------------------------------------------------------
 
+
+const {Canvas, device} = require('tabris');
+
 //---------------------------------------------------------------------
 // QR8bitByte
 //---------------------------------------------------------------------
@@ -352,7 +355,6 @@ QRCode.prototype = {
 		}
 		
 	}
-
 };
 
 QRCode.PAD0 = 0xEC;
@@ -1251,20 +1253,40 @@ module.exports = {
 	QRRSBlock:QRRSBlock,	
 	QR8bitByte:QR8bitByte,
 	QRBitBuffer: QRBitBuffer,
-	QRCode: QRCode
+	QRCode: QRCode,
+	GenerateQRToCanvas: function(text, canvas, width, height, x, y){
+		var r = false;
+		var teks = text || '';
+		if (teks==''){
+			return r;
+		}
+		var pos = {
+			x: x||0,
+			y: y||0,
+			width: width||canvas.width,
+			height: height||canvas.height
+		};
+		var scaleFactor = device.scaleFactor;
+		var ctx = canvas.getContext('2d', pos.width * scaleFactor, pos.height * scaleFactor);
+		ctx.scale(scaleFactor, scaleFactor);
+
+
+		var q = new QRCode(-1, QRErrorCorrectLevel.H);
+		qrCode.addData(teks);
+		qrCode.make();
+
+		var tileW	= pos.width  / qrCode.getModuleCount();
+		var tileH	= pos.height / qrCode.getModuleCount();
+
+		for( var row = 0; row < qrCode.getModuleCount(); row++ ){
+			for( var col = 0; col < qrCode.getModuleCount(); col++ ){
+				ctx.fillStyle = qrCode.isDark(row, col) ? 'black' : 'white';
+				var w = (Math.ceil((col+1)*tileW) - Math.floor(col*tileW));
+				var h = (Math.ceil((row+1)*tileW) - Math.floor(row*tileW));
+				ctx.fillRect(Math.round(col*tileW),Math.round(row*tileH), w, h);  
+			}	
+		}
+		return true;
+	}
 	
 };
-/*module.exports.QR8bitByte = function QR8bitByte(data) {
-	this.mode = QRMode.MODE_8BIT_BYTE;
-	this.data = data;
-	this.getLength = function(buffer) {
-		return this.data.length;
-	},
-	
-	this.write = function(buffer) {
-		for (var i = 0; i < this.data.length; i++) {
-			// not JIS ...
-			buffer.put(this.data.charCodeAt(i), 8);
-		}
-	}
-}*/
