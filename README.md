@@ -40,37 +40,15 @@ Android
 
 ## 3. Installation
 
-### Automatically (Cordova CLI)
-Cordova - TabrisJS QR Code Generator plugin is compatible with [Cordova CLI](https://cordova.apache.org/docs/en/latest/reference/cordova-cli/index.html), here's how it works with the CLI (backup your project first!):
+As per TabrisJS CLI generated project structure, I chose not to publish this plugin to npm, thus you cannot install this plugin via Cordova CLI / NPM CLI.
 
-Using the Cordova CLI and the [Cordova Plugin Registry](http://plugins.cordova.io)
-```
-$ cordova plugin add cordova-plugin-tabrisjs-qrgen
-```
+Please use manual installation instead:
 
-Or instal using Git repository
-```
-$ cordova plugin add https://github.com/jokorivai/cordova-plugin-tabrisjs-qrgen.git
-```
-
-tabrisjscard.js is brought in automatically. There is no need to change or add anything in your code to make it available.
-Please note that this plugin is NOT for HTML/WebView based Cordova apps. This plugin is ONLY for TabrisJS Cordova apps.
-
-To create QR Code, call
-```js
-// reference to the plugin
-var QRCodeGenerator = window.tabrisJsPlugins.qrCode.GenerateQRToCanvas;
-// create card:
-QRCodeGenerator(textData, canvasObject, width, height);
-```
-
-Or
 ```js
 window.tabrisJsPlugins.qrCode.GenerateQRToCanvas(textData, canvasObject, width, height);
 ```
 
 ### Manually
-You'd better use the CLI, but here goes:
 
 Grab a copy of `tabrisjsqrcode.js`, from `extracted-zip\www\` and put it to your project source's `www` folder and reference it:
 ```js
