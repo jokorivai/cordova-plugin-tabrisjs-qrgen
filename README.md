@@ -81,11 +81,9 @@ QRCode.GenerateQRToCanvas(textData, canvasObject, width, height);
 ## 4. CREDITS
 
 This plugin is based on [TabrisJS](http://tabrisjs.com).
-The QR Code Javascript Generator code was entirely created by [Kazuhiko Arase](http://www.d-project.com/)
+The QR Code Javascript Generator code was entirely created by [Kazuhiko Arase](http://www.d-project.com/).
 TabrisJS adaptation was done by me.
 
-This library is now trying to stick on Google Material Design specs, thanks to [mpost](https://github.com/mpost) for commenting
-on [This TabrisJS Issue](https://github.com/eclipsesource/tabris-js/issues/886).
 
 ## 5. CHANGELOG
 
