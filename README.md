@@ -40,9 +40,12 @@ Android
 
 ## 3. Installation
 
-As per TabrisJS CLI generated project structure, I chose not to publish this plugin to npm, thus you cannot install this plugin via Cordova CLI / NPM CLI.
+Install this plugin via Cordova CLI / NPM CLI.
 
-Please use manual installation instead:
+```js
+cordova plugin add cordova-plugin-tabrisjs-qrgen
+```
+
 
 ### Manually
 
