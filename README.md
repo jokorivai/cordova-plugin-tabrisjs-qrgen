@@ -49,8 +49,8 @@ cordova plugin add cordova-plugin-tabrisjs-qrgen
 
 To Use: 
 ```
-var QRCode = require('TabrisJSQRCodeGenerator');
-QRCode.GenerateQRToCanvas(textData, canvasObject, width, height);
+const QRGen = window.tabrisJsPlugins.qrCode;
+QRGen.GenerateQRToCanvas(textData, canvasObject, width, height);
 ```
 
 ### Manually

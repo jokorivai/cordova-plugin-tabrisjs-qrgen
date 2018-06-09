@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-tabrisjs-qrgen",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "This plugin allows you to generate QR Code within TabrisJS apps using plain javascript. Only for TabrisJS apps. Supported on Android and iOS (as platforms supported by TabrisJS).",
   "cordova": {
     "id": "cordova-plugin-tabrisjs-qrgen",
