@@ -43,9 +43,15 @@ Android
 Install this plugin via Cordova CLI / NPM CLI.
 
 ```js
+cd build/cordova
 cordova plugin add cordova-plugin-tabrisjs-qrgen
 ```
 
+To Use: 
+```
+var QRCode = require('TabrisJSQRCodeGenerator');
+QRCode.GenerateQRToCanvas(textData, canvasObject, width, height);
+```
 
 ### Manually
 
